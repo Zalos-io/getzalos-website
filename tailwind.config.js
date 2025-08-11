@@ -3,6 +3,9 @@ module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
+    fontFamily: {
+      'sans': ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',

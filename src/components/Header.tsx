@@ -34,7 +34,7 @@ const Menu = () => {
                   <span className="sr-only">{companyName}</span>
                   <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
                 </a>
-                <div className="-mr-2 flex items-center md:hidden">
+                <div className="-mr-2 flex items-center lg:hidden">
                   <Popover.Button
                     className={`bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary`}
                   >
@@ -44,7 +44,7 @@ const Menu = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+            <div className="hidden lg:flex lg:items-center lg:ml-10 lg:pr-4 lg:space-x-6">
               {navigation.map((item) => (
                 <Link
                   spy={true}
@@ -53,14 +53,14 @@ const Menu = () => {
                   duration={1000}
                   key={item.name}
                   to={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900 transition-colors duration-200"
+                  className="font-medium text-gray-500 hover:text-gray-900 transition-colors duration-200 whitespace-nowrap cursor-pointer"
                 >
                   {item.name}
                 </Link>
               ))}
               <a
                 href={callToAction.href}
-                className={`font-medium text-white bg-primary hover:bg-secondary px-4 py-2 rounded-md transition-colors duration-200 shadow-soft hover:shadow-glow`}
+                className={`font-medium text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary px-4 py-2 rounded-md transition-colors duration-200 shadow-soft hover:shadow-glow whitespace-nowrap cursor-pointer`}
               >
                 {callToAction.text}
               </a>
@@ -79,7 +79,7 @@ const Menu = () => {
         >
           <Popover.Panel
             focus
-            className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+            className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
           >
             <div
               className={`rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden`}
@@ -106,7 +106,7 @@ const Menu = () => {
                     duration={1000}
                     key={item.name}
                     to={item.href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                   >
                     {item.name}
                   </Link>
@@ -114,7 +114,7 @@ const Menu = () => {
               </div>
               <a
                 href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-white bg-primary hover:bg-secondary transition-colors duration-200`}
+                className={`block w-full px-5 py-3 text-center font-medium text-white bg-primary hover:bg-white hover:text-primary border-2 border-primary transition-colors duration-200 cursor-pointer`}
               >
                 {callToAction.text}
               </a>

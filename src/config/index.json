@@ -26,8 +26,8 @@
     }
   ],
   "callToAction": {
-    "text": "Get Started",
-    "href": "#demo"
+    "text": "Book a Free Call",
+    "href": "/contact-us"
   },
   "mainHero": {
     "title": "AI-Powered",
@@ -35,8 +35,8 @@
     "description": "Transform document risk identification and redaction from days to minutes. Zalos uses advanced AI to automatically detect sensitive data, mask compliance risks, and streamline your regulatory processes.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
-      "text": "Start Free Trial",
-      "href": "#demo"
+      "text": "Book a Free Call",
+      "href": "/contact-us"
     },
     "secondaryAction": {
       "text": "Watch Demo",
@@ -60,50 +60,60 @@
     ]
   },
   "features": {
-    "title": "Enterprise-Grade Features",
-    "subtitle": "Built for Scale and Security",
-    "description": "Zalos combines cutting-edge AI with enterprise security standards to deliver a compliance solution that grows with your organization.",
+    "title": "Features",
+    "subtitle": "Review Risks at Speed and Scale",
+    "description": "AI-driven risk identification, redaction and compliance - ready to scale with your needs",
     "items": [
       {
-        "name": "AI-Powered Detection",
-        "description": "Advanced machine learning algorithms that understand context and identify risks that traditional keyword searches miss.",
+        "name": "Set Rules",
+        "description": "Configure PII, Company Sensitivities, or custom rules to match your legal framework.",
         "icon": "/assets/images/react.png"
       },
       {
-        "name": "Seamless Integration",
-        "description": "Native SharePoint support, secure file transfer, and API-first architecture for easy integration with existing workflows.",
+        "name": "Prioritize Files",
+        "description": "Surface the most sensitive documents and pages for faster resolution.",
         "icon": "/assets/images/tailwindcss.svg"
       },
       {
-        "name": "Full Audit Trail",
-        "description": "Complete logging of every change, decision rationale, and compliance action for regulatory requirements and internal oversight.",
+        "name": "Flag Risks",
+        "description": "AI-driven detection of context-sensitive risks beyond simple keywords.",
         "icon": "/assets/images/nextjs.svg"
       },
       {
-        "name": "Enterprise Security",
-        "description": "SOC 2 compliant, end-to-end encryption, and role-based access controls to protect your most sensitive data.",
+        "name": "Manipulate Files",
+        "description": "Redact, anonymize, or pseudonymize across Microsoft file formats.",
         "icon": "/assets/images/ts.png"
+      },
+      {
+        "name": "Seamless Integrations",
+        "description": "Works natively with SharePoint, secure file transfer, or other integration needs.",
+        "icon": "/assets/images/react.png"
+      },
+      {
+        "name": "Ensure Auditability",
+        "description": "Log changes, rationale for every redaction, and maintain a full audit trail.",
+        "icon": "/assets/images/tailwindcss.svg"
       }
     ]
   },
   "useCases": {
-    "title": "Purpose-Built for High Security",
-    "subtitle": "Protect sensitive data across regulated industries",
+    "title": "Purpose-built for high security",
+    "subtitle": "Protect sensitive data across regulated industries with advanced, compliant anonymization.",
     "items": [
       {
         "title": "Data Subject Access Requests",
-        "description": "Automate DSAR fulfilment by finding, extracting, and redacting relevant files while maintaining a complete audit trail.",
-        "icon": "📁"
+        "description": "Automate DSAR fulfilment by finding, extracting, and redacting relevant files while maintaining an audit trail.",
+        "icon": "https://3dicons.co/icons/176980-folder?angle=dynamic"
       },
       {
-        "title": "Legacy File Anonymization",
-        "description": "Clean legacy archives for safe re-use in wider organizations or AI pipelines without risking hidden compliance risks.",
-        "icon": "🔒"
+        "title": "Past Project File Anonymisation",
+        "description": "Clean legacy archives for safe re-use in wider organizations or AI pipelines - without risking burying hidden risks.",
+        "icon": "https://3dicons.co/icons/e67951-locker?angle=dynamic"
       },
       {
-        "title": "Regulatory Compliance",
-        "description": "Meet internal and external compliance demands with consistent, repeatable anonymization workflows across all document types.",
-        "icon": "🔗"
+        "title": "Regulatory & Compliance Reviews",
+        "description": "Meet internal and external compliance demands with consistent, repeatable anonymisation workflows.",
+        "icon": "https://3dicons.co/icons/2d9fa2-link?angle=dynamic"
       }
     ]
   },
@@ -176,11 +186,6 @@
         "href": "#why",
         "content": "Built by compliance experts and AI engineers, Zalos combines deep regulatory knowledge with cutting-edge technology to deliver solutions that actually work in real-world compliance scenarios."
       }
-    ],
-    "socialMedia": {
-      "github": "https://github.com/zalos",
-      "twitter": "https://twitter.com/zalos_ai",
-      "linkedin": "https://www.linkedin.com/company/zalos-ai"
-    }
+    ]
   }
 }

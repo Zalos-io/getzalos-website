@@ -6,7 +6,7 @@ const Pricing = () => {
   const { items, title, subtitle } = pricing;
 
   return (
-    <section className="py-16 bg-gray-50" id="pricing">
+    <section className="py-16 bg-white" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base text-primary font-semibold tracking-wide uppercase">

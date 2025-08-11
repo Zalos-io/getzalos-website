@@ -14,11 +14,11 @@ import UseCases from '../components/UseCases';
 
 const App = () => {
   return (
-    <div className={`bg-background grid gap-y-16 overflow-hidden`}>
-      <div className={`relative bg-background`}>
+    <div className="bg-background overflow-hidden">
+      <div className="relative bg-background">
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            className="relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
           >
             <Header />
             <MainHero />
@@ -26,31 +26,37 @@ const App = () => {
         </div>
         <MainHeroImage />
       </div>
+      
       <Canvas />
+      
       <LazyShow>
-        <>
-          <Product />
-          <Canvas />
-        </>
+        <Product />
       </LazyShow>
+      
+      <Canvas />
+      
       <LazyShow>
-        <>
-          <Features />
-          <Canvas />
-        </>
+        <Features />
       </LazyShow>
+      
+      <Canvas />
+      
       <LazyShow>
         <UseCases />
       </LazyShow>
+      
+      <Canvas />
+      
       <LazyShow>
         <Pricing />
       </LazyShow>
+      
+      <Canvas />
+      
       <LazyShow>
-        <>
-          <Canvas />
-          <About />
-        </>
+        <About />
       </LazyShow>
+      
       <Footer />
       <Analytics />
     </div>
