@@ -29,14 +29,6 @@ const Footer = () => (
                   Features
                 </a>
               </li>
-              <li>
-                <a
-                  href="#pricing"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Pricing
-                </a>
-              </li>
             </ul>
           </div>
 
