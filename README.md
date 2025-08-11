@@ -1,95 +1,144 @@
-# React.js landing page template v2
+# Zalos - AI Agents for Compliance Automation
 
-## <a href="https://react-landing-page-template-2021.vercel.app/"> LIVE DEMO</a>
+## Modern Landing Page for Document Risk Identification & Redaction
 
-<img src="public/assets/gifs/demo.gif" width="100%" height="auto" />
+### About Zalos
 
-### Description
+Zalos builds AI agents to automate compliance processes, specifically focusing on **Document Risk Identification & Redaction**. We help organizations identify document risks, mask sensitive data, and automate compliance processes - in minutes, not days.
 
-This is a React.js/Next.js based landing page plug-n-play template, ideal for startups/companies/service providers wanting to showcase their vision in a single page sleek and modern landing page.
+### Our Solution
 
-### Features
+- 🔍 **Risk Identification**: Automatically detect sensitive data and compliance risks in documents
+- 🛡️ **Data Redaction**: Intelligent masking of sensitive information
+- ⚡ **Speed**: Complete compliance processes in minutes instead of days
+- 🤖 **AI-Powered**: Advanced machine learning algorithms for accurate detection
 
-- 📱  Responsive design
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
+## Problems to Solve
 
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (w/ JIT mode)
+### Hidden Costs of Manual Redaction
 
-- 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
+**Manual redaction increases risks, reduces efficiency, and is impossible to scale**
 
-- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
+- **⏰ Wasted Time**: Large document sets take days to accurately process
+- **📊 Compliance Risks**: Human process is prone to errors — risking reputations and more  
+- **🔗 Poor Oversight**: Audits and disputes become guesswork without strong process control
 
-- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript
+## Features
 
-- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
+### Review Risks at Speed and Scale
 
-- 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
+**AI-driven risk identification, redaction and compliance - ready to scale with your needs**
 
-Built-in feature from Next.js:
+- **⚙️ Set Rules**: Configure PII, Company Sensitivities, or custom rules to match your legal framework
+- **📊 Prioritize Files**: Surface the most sensitive documents and pages for faster resolution
+- **🚩 Flag Risks**: AI-driven detection of context-sensitive risks beyond simple keywords
+- **📝 Manipulate Files**: Redact, anonymize, or pseudonymize across Microsoft file formats
+- **🔗 Seamless Integrations**: Works natively with SharePoint, secure file transfer, or other integration needs
+- **📋 Ensure Auditability**: Log changes, rationale for every redaction, and maintain a full audit trail
 
-- ☕ Minify HTML & CSS
-- 💨 Live reload
-- ✅ Cache busting
+### Technical Features
 
-### Make it your own
+- 📱 Responsive design optimized for all devices
+- 🔥 Built with [Next.js](https://nextjs.org) for optimal performance
+- 🎨 Modern styling with [Tailwind CSS](https://tailwindcss.com)
+- 🎉 Full [TypeScript](https://www.typescriptlang.org) support
+- 🤖 SEO optimized with metadata and structured data
+- ⚡ Fast loading with code splitting and optimization
 
-#### 1. Clone repo
+## Use Cases
 
-```
-git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
-cd react-landing-page-template-2021
+### Purpose-built for High Security
+
+**Protect sensitive data across regulated industries with advanced, compliant anonymization**
+
+#### 📁 Data Subject Access Requests
+
+Automate DSAR fulfilment by finding, extracting, and redacting relevant files while maintaining an audit trail.
+
+#### 🔒 Past Project File Anonymisation
+
+Clean legacy archives for safe re-use in wider organizations or AI pipelines - without risking burying hidden risks.
+
+#### 🔗 Regulatory & Compliance Reviews
+
+Meet internal and external compliance demands with consistent, repeatable anonymisation workflows.
+
+## Development Setup
+
+### 1. Clone and Install
+
+```bash
+git clone https://github.com/your-org/getzalos-website.git
+cd getzalos-website
 pnpm install
 ```
 
-Then, you can run locally in development mode with live reload:
+### 2. Development Server
 
-```
+Start the development server with live reload:
+
+```bash
 pnpm dev
 ```
 
-Open <http://localhost:3000> with your favorite browser to see your project.
+Open <http://localhost:3000> to view the Zalos landing page.
 
-#### 2. Add your own content
+### 3. Customization
 
- 1. **Content**: change the configuration in the ```src/config/index.json``` file to change the content of the landing page to match your use ```src/config/index.json```  folder and .
- 2. **Images**:  add any images/icons..etc to the ```public/assets/images```  folder and update their reference source in ```src/config/index.json```.
- 3. **Theme**:  to change the theme, update the ```tailwind.config.js```  file to match the theme of your branding. [Tutorial](https://tailwindcss.com/docs/configuration).
+1. **Content**: Update the configuration in `src/config/index.json` to customize the Zalos landing page content
+2. **Images**: Add Zalos brand assets to `public/assets/images/` and reference them in the config
+3. **Branding**: Modify `tailwind.config.js` to match Zalos brand colors and styling
 
-#### 3. Deploy to production
+### 4. Production Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fissaafalkattan%2Freact-landing-page-template-2021)
+You can deploy locally in production mode:
 
-##### Deploy manually
-
-You can see the results locally in production mode with:
-
-  ```
+```bash
 pnpm build
 pnpm start
 ```
 
-The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
+Or create an optimized static build:
 
-You can create an optimised production build with:
-
-```
+```bash
 pnpm build-prod
 ```
 
-### Contributions
+## Project Structure
 
-Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
+```
+src/
+├── components/          # React components
+│   ├── Header.tsx      # Navigation header
+│   ├── MainHero.tsx    # Hero section
+│   ├── Product.tsx     # Product showcase
+│   ├── Features.tsx    # Feature highlights
+│   ├── UseCases.tsx    # Use case examples
+│   ├── Pricing.tsx     # Pricing plans
+│   ├── About.tsx       # Company information
+│   └── Footer.tsx      # Site footer
+├── config/
+│   └── index.json      # Content configuration
+├── pages/
+│   └── index.tsx       # Main landing page
+└── styles/
+    └── main.css        # Global styles
+```
 
-### License
+## Contributions
 
-Licensed under the MIT License, Copyright © 2021
-  
+Everyone is welcome to contribute to this project. Feel free to open an issue if you have questions or found a bug.
 
-## Liked this template? <a href="https://www.buymeacoffee.com/issaaf">Buy me a coffee ☕️</a>
+## Technology Stack
 
+This landing page is built with modern web technologies:
 
+- **Next.js 12** - React framework with static site generation
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Smooth animations
+- **React Scroll** - Navigation scrolling
 
+## License
 
----
-
-### Looking for v1? <a href="https://github.com/issaafalkattan/React-Landing-Page-Template">V1</a>
+Licensed under the MIT License, Copyright © 2024 Zalos

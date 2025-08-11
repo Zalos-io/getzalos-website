@@ -17,14 +17,21 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#ec4755',
-        secondary: '#a12c34',
-        tertiary: '#99a0a3',
-        border: '#1a2e35',
+        primary: '#2563eb', // Modern blue
+        secondary: '#1e40af', // Darker blue
+        tertiary: '#64748b', // Slate gray
+        border: '#e2e8f0', // Light gray
         background: '#ffffff',
+        accent: '#f59e0b', // Amber for highlights
+        success: '#10b981', // Green for success states
+        warning: '#f59e0b', // Amber for warnings
+        error: '#ef4444', // Red for errors
       },
       animation: {
         vote: 'vote 1s ease-in-out',
+        fadeIn: 'fadeIn 0.5s ease-in-out',
+        slideUp: 'slideUp 0.5s ease-out',
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       keyframes: {
         vote: {
@@ -38,6 +45,18 @@ module.exports = {
             transform: 'rotate(30deg)',
           },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+      boxShadow: {
+        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
+        'glow': '0 0 20px rgba(37, 99, 235, 0.3)',
       },
     },
   },

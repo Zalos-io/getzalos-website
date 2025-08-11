@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Zalos",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
@@ -12,7 +12,10 @@
       "name": "Features",
       "href": "features"
     },
-
+    {
+      "name": "Use Cases",
+      "href": "use-cases"
+    },
     {
       "name": "Pricing",
       "href": "pricing"
@@ -23,131 +26,161 @@
     }
   ],
   "callToAction": {
-    "text": "Get started",
-    "href": "#"
+    "text": "Get Started",
+    "href": "#demo"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "AI-Powered",
+    "subtitle": "Compliance Automation",
+    "description": "Transform document risk identification and redaction from days to minutes. Zalos uses advanced AI to automatically detect sensitive data, mask compliance risks, and streamline your regulatory processes.",
     "img": "/assets/images/happyTeam.jpeg",
     "primaryAction": {
-      "text": "Get started",
-      "href": "#"
+      "text": "Start Free Trial",
+      "href": "#demo"
     },
     "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "text": "Watch Demo",
+      "href": "#demo"
     }
   },
   "product": {
-    "title": "React landing page 2021",
+    "title": "Complete Compliance Solution",
+    "subtitle": "From Risk Detection to Audit Trail",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "title": "Intelligent Risk Detection",
+        "description": "AI algorithms automatically identify sensitive data, PII, and compliance risks across all document types with context-aware analysis that goes beyond simple keyword matching.",
         "img": "/assets/images/product1.jpg"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "title": "Automated Redaction Engine",
+        "description": "Smart masking and anonymization across Microsoft formats with full audit trails. Redact, pseudonymize, or anonymize sensitive information while maintaining document integrity.",
         "img": "/assets/images/product2.jpg"
       }
     ]
   },
   "features": {
-    "title": "Latest & greatest ",
-    "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "title": "Enterprise-Grade Features",
+    "subtitle": "Built for Scale and Security",
+    "description": "Zalos combines cutting-edge AI with enterprise security standards to deliver a compliance solution that grows with your organization.",
     "items": [
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
+        "name": "AI-Powered Detection",
+        "description": "Advanced machine learning algorithms that understand context and identify risks that traditional keyword searches miss.",
         "icon": "/assets/images/react.png"
       },
       {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
+        "name": "Seamless Integration",
+        "description": "Native SharePoint support, secure file transfer, and API-first architecture for easy integration with existing workflows.",
         "icon": "/assets/images/tailwindcss.svg"
       },
       {
-        "name": "Next.js",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
+        "name": "Full Audit Trail",
+        "description": "Complete logging of every change, decision rationale, and compliance action for regulatory requirements and internal oversight.",
         "icon": "/assets/images/nextjs.svg"
       },
       {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "name": "Enterprise Security",
+        "description": "SOC 2 compliant, end-to-end encryption, and role-based access controls to protect your most sensitive data.",
         "icon": "/assets/images/ts.png"
       }
     ]
   },
-  "pricing": {
-    "title": "Pricing",
+  "useCases": {
+    "title": "Purpose-Built for High Security",
+    "subtitle": "Protect sensitive data across regulated industries",
     "items": [
       {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
-        "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
-        ]
+        "title": "Data Subject Access Requests",
+        "description": "Automate DSAR fulfilment by finding, extracting, and redacting relevant files while maintaining a complete audit trail.",
+        "icon": "📁"
       },
       {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
-
+        "title": "Legacy File Anonymization",
+        "description": "Clean legacy archives for safe re-use in wider organizations or AI pipelines without risking hidden compliance risks.",
+        "icon": "🔒"
+      },
+      {
+        "title": "Regulatory Compliance",
+        "description": "Meet internal and external compliance demands with consistent, repeatable anonymization workflows across all document types.",
+        "icon": "🔗"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your compliance needs",
+    "items": [
+      {
+        "name": "Starter",
+        "price": "$299",
+        "priceDetails": "per month",
         "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
-        ]
+          "Up to 1,000 documents/month",
+          "Basic AI detection",
+          "Standard redaction tools",
+          "Email support",
+          "Basic audit trail"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Professional",
+        "price": "$799",
+        "priceDetails": "per month",
+        "features": [
+          "Up to 10,000 documents/month",
+          "Advanced AI detection",
+          "Full redaction suite",
+          "Priority support",
+          "Complete audit trail",
+          "API access"
+        ],
+        "popular": true
       },
       {
         "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
+        "price": "Custom",
+        "priceDetails": "contact sales",
         "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
-        ]
+          "Unlimited documents",
+          "Custom AI models",
+          "White-label solution",
+          "24/7 dedicated support",
+          "Custom integrations",
+          "On-premise deployment"
+        ],
+        "popular": false
       }
     ]
   },
   "about": {
     "sections": [
       {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "name": "Our Mission",
+        "href": "#mission",
+        "content": "Zalos is on a mission to eliminate the hidden costs of manual compliance processes. We believe every organization deserves enterprise-grade compliance automation that's both powerful and accessible."
       },
       {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "name": "The Problem",
+        "href": "#problem",
+        "content": "Manual redaction increases risks, reduces efficiency, and is impossible to scale. Large document sets take days to process, human processes are prone to errors, and poor oversight makes audits a guessing game."
       },
       {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "name": "Our Solution",
+        "href": "#solution",
+        "content": "AI-driven risk identification, redaction, and compliance automation that scales with your needs. Set rules, prioritize files, flag risks, and manipulate documents while maintaining full auditability."
       },
       {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "name": "Why Zalos",
+        "href": "#why",
+        "content": "Built by compliance experts and AI engineers, Zalos combines deep regulatory knowledge with cutting-edge technology to deliver solutions that actually work in real-world compliance scenarios."
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "github": "https://github.com/zalos",
+      "twitter": "https://twitter.com/zalos_ai",
+      "linkedin": "https://www.linkedin.com/company/zalos-ai"
     }
   }
 }
