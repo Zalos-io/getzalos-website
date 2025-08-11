@@ -38,13 +38,13 @@ Built-in feature from Next.js:
 ```
 git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
 cd react-landing-page-template-2021
-yarn
+pnpm install
 ```
 
 Then, you can run locally in development mode with live reload:
 
 ```
-yarn dev
+pnpm dev
 ```
 
 Open <http://localhost:3000> with your favorite browser to see your project.
@@ -64,8 +64,8 @@ Open <http://localhost:3000> with your favorite browser to see your project.
 You can see the results locally in production mode with:
 
   ```
-yarn build
-yarn start
+pnpm build
+pnpm start
 ```
 
 The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
@@ -73,7 +73,7 @@ The generated HTML and CSS files are minified (built-in feature from Next js). I
 You can create an optimised production build with:
 
 ```
-yarn build-prod
+pnpm build-prod
 ```
 
 ### Contributions
