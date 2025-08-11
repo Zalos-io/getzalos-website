@@ -77,19 +77,23 @@ Please respond within 24 hours to schedule their free consultation call.
       `,
     });
 
+    // eslint-disable-next-line no-console
     console.log('Email sent successfully:', data);
-    
-    return res.status(200).json({ 
+
+    return res.status(200).json({
       message: 'Email sent successfully',
-      id: data.id 
+      id: data.data?.id,
     });
-    
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Error sending email:', error);
-    
-    return res.status(500).json({ 
+
+    return res.status(500).json({
       message: 'Failed to send email',
-      error: process.env.NODE_ENV === 'development' ? error : 'Internal server error'
+      error:
+        process.env.NODE_ENV === 'development'
+          ? error
+          : 'Internal server error',
     });
   }
 }

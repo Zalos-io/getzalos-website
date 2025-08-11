@@ -2,7 +2,7 @@ import config from '../config/index.json';
 
 const UseCases = () => {
   const { useCases } = config;
-  
+
   if (!useCases) {
     return null;
   }
@@ -25,15 +25,12 @@ const UseCases = () => {
         <div className="mt-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {useCases.items.map((item, index) => (
-              <div 
-                key={index}
-                className="relative group h-full"
-              >
+              <div key={index} className="relative group h-full">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative bg-white p-6 rounded-lg shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/10 mb-4">
-                    <img 
-                      src={item.icon} 
+                    <img
+                      src={item.icon}
                       alt={item.title}
                       className="h-8 w-8 object-contain"
                     />

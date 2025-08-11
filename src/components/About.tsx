@@ -1,4 +1,3 @@
-
 import config from '../config/index.json';
 
 const About = () => {
@@ -38,10 +37,11 @@ const About = () => {
           <div className="flex items-center justify-center mb-8">
             <img src={logo} alt={companyName} className="w-16 h-16" />
           </div>
-          
+
           <div className="border-t border-gray-200 pt-8">
             <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} {companyName}. All rights reserved.
+              &copy; {new Date().getFullYear()} {companyName}. All rights
+              reserved.
             </p>
           </div>
         </div>

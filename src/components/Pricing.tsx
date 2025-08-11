@@ -1,4 +1,3 @@
-
 import config from '../config/index.json';
 
 const Pricing = () => {
@@ -21,12 +20,12 @@ const Pricing = () => {
         </div>
 
         <div className="mt-12 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
-          {items.map((plan, index) => (
+          {items.map((plan) => (
             <div
               key={plan.name}
               className={`relative bg-white rounded-lg shadow-soft border-2 ${
-                plan.popular 
-                  ? 'border-primary ring-2 ring-primary ring-opacity-50' 
+                plan.popular
+                  ? 'border-primary ring-2 ring-primary ring-opacity-50'
                   : 'border-gray-200'
               }`}
             >
@@ -37,7 +36,7 @@ const Pricing = () => {
                   </span>
                 </div>
               )}
-              
+
               <div className="p-6">
                 <h3 className="text-lg leading-6 font-medium text-gray-900 text-center">
                   {plan.name}
@@ -50,13 +49,21 @@ const Pricing = () => {
                     {plan.priceDetails}
                   </span>
                 </div>
-                
+
                 <ul className="mt-6 space-y-4">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
                       <div className="flex-shrink-0">
-                        <svg className="h-5 w-5 text-success" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        <svg
+                          className="h-5 w-5 text-success"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       </div>
                       <span className="ml-3 text-base text-gray-700">
@@ -65,13 +72,13 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                
+
                 <div className="mt-8">
                   <a
                     href="#demo"
                     className={`w-full flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors duration-200 ${
-                      plan.popular 
-                        ? 'shadow-glow hover:shadow-lg' 
+                      plan.popular
+                        ? 'shadow-glow hover:shadow-lg'
                         : 'shadow-soft hover:shadow-md'
                     }`}
                   >
@@ -82,11 +89,14 @@ const Pricing = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
           <p className="text-base text-gray-500">
             Need a custom solution?{' '}
-            <a href="#demo" className="font-medium text-primary hover:text-secondary transition-colors duration-200">
+            <a
+              href="#demo"
+              className="font-medium text-primary hover:text-secondary transition-colors duration-200"
+            >
               Contact our sales team
             </a>
           </p>
