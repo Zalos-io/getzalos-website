@@ -1,7 +1,8 @@
 {
   "company": {
     "name": "Zalos",
-    "logo": "/assets/images/logo.png"
+    "logo": "/assets/images/logo-black.png",
+    "footerLogo": "/assets/images/zalos-square-300.png"
   },
   "navigation": [
     {
@@ -37,10 +38,6 @@
     "primaryAction": {
       "text": "Book a Free Call",
       "href": "/contact-us"
-    },
-    "secondaryAction": {
-      "text": "Watch Demo",
-      "href": "#demo"
     }
   },
   "product": {
@@ -103,17 +100,17 @@
       {
         "title": "Data Subject Access Requests",
         "description": "Automate DSAR fulfilment by finding, extracting, and redacting relevant files while maintaining an audit trail.",
-        "icon": "https://3dicons.co/icons/176980-folder?angle=dynamic"
+        "icon": "Search"
       },
       {
         "title": "Past Project File Anonymisation",
         "description": "Clean legacy archives for safe re-use in wider organizations or AI pipelines - without risking burying hidden risks.",
-        "icon": "https://3dicons.co/icons/e67951-locker?angle=dynamic"
+        "icon": "Scissors"
       },
       {
         "title": "Regulatory & Compliance Reviews",
         "description": "Meet internal and external compliance demands with consistent, repeatable anonymisation workflows.",
-        "icon": "https://3dicons.co/icons/2d9fa2-link?angle=dynamic"
+        "icon": "Building"
       }
     ]
   },
@@ -187,5 +184,13 @@
         "content": "Built by compliance experts and AI engineers, Zalos combines deep regulatory knowledge with cutting-edge technology to deliver solutions that actually work in real-world compliance scenarios."
       }
     ]
+  },
+  "callToActionSection": {
+    "title": "Ready to save time & improve compliance?",
+    "subtitle": "Request a call to discuss reducing risk, saving time, and automating smarter.",
+    "button": {
+      "text": "Book a Free Call",
+      "href": "/contact-us"
+    }
   }
 }

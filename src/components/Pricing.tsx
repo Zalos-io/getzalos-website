@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import config from '../config/index.json';
 
 const Pricing = () => {
@@ -74,16 +76,17 @@ const Pricing = () => {
                 </ul>
 
                 <div className="mt-8">
-                  <a
-                    href="#demo"
-                    className={`w-full flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors duration-200 ${
-                      plan.popular
-                        ? 'shadow-glow hover:shadow-lg'
-                        : 'shadow-soft hover:shadow-md'
-                    }`}
-                  >
-                    {plan.price === 'Custom' ? 'Contact Sales' : 'Get Started'}
-                  </a>
+                  <Link href="/contact-us">
+                    <a
+                      className={`w-full flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors duration-200 ${
+                        plan.popular
+                          ? 'shadow-glow hover:shadow-lg'
+                          : 'shadow-soft hover:shadow-md'
+                      }`}
+                    >
+                      {plan.price === 'Custom' ? 'Contact Sales' : 'Get Started'}
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -93,12 +96,11 @@ const Pricing = () => {
         <div className="mt-12 text-center">
           <p className="text-base text-gray-500">
             Need a custom solution?{' '}
-            <a
-              href="#demo"
-              className="font-medium text-primary hover:text-secondary transition-colors duration-200"
-            >
-              Contact our sales team
-            </a>
+            <Link href="/contact-us">
+              <a className="font-medium text-primary hover:text-secondary transition-colors duration-200">
+                Contact our sales team
+              </a>
+            </Link>
           </p>
         </div>
       </div>

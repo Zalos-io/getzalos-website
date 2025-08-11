@@ -1,3 +1,5 @@
+import { Building, Scissors, Search } from 'lucide-react';
+
 import config from '../config/index.json';
 
 const UseCases = () => {
@@ -6,6 +8,16 @@ const UseCases = () => {
   if (!useCases) {
     return null;
   }
+
+  const getIcon = (iconName: string) => {
+    const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+      Search,
+      Scissors,
+      Building,
+    };
+
+    return iconMap[iconName] || Search; // Default to Search if icon not found
+  };
 
   return (
     <div className="py-16 bg-white" id="use-cases">
@@ -29,11 +41,10 @@ const UseCases = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative bg-white p-6 rounded-lg shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/10 mb-4">
-                    <img
-                      src={item.icon}
-                      alt={item.title}
-                      className="h-8 w-8 object-contain"
-                    />
+                    {(() => {
+                      const IconComponent = getIcon(item.icon);
+                      return <IconComponent className="h-8 w-8 text-primary" />;
+                    })()}
                   </div>
                   <h3 className="text-lg leading-6 font-medium text-gray-900 mb-2">
                     {item.title}

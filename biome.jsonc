@@ -1,0 +1,172 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": [
+      "**/pnpm-lock.yaml",
+      "lib/db/migrations",
+      "lib/editor/react-renderer.tsx",
+      "node_modules",
+      ".next",
+      "public",
+      ".vercel"
+    ]
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "defaultBranch": "main",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        // Not in recommended ruleset, turning on manually
+        "useHtmlLang": "warn",
+        // Not in recommended ruleset, turning on manually
+        "noHeaderScope": "warn",
+        "useValidAriaRole": {
+          "level": "warn",
+          "options": {
+            "ignoreNonDom": false,
+            "allowInvalidRoles": ["none", "text"]
+          }
+        },
+        // Rule is buggy, revisit later
+        "useSemanticElements": "off",
+        // We do not intend to adhere to this rule
+        "noSvgWithoutTitle": "off",
+        // We would need a cultural change to turn this on
+        "useMediaCaption": "off",
+        // We're highly intentional about when we use autofocus
+        "noAutofocus": "off",
+        // Covered by Conformance
+        "noBlankTarget": "off",
+        // Disable focusable interactive element requirement
+        "useFocusableInteractive": "off",
+        // Disable required ARIA attributes check
+        "useAriaPropsForRole": "off",
+        // Disable keyboard event requirement with click events
+        "useKeyWithClickEvents": "off"
+      },
+      "complexity": {
+        // Not in recommended ruleset, turning on manually
+        "noUselessStringConcat": "warn",
+        // forEach is too familiar to ban
+        "noForEach": "off",
+        // Turned off due to developer preferences
+        "noUselessSwitchCase": "off",
+        // Turned off due to developer preferences
+        "noUselessThisAlias": "off",
+        // Turned off due to developer preferences
+        "useOptionalChain": "off"
+      },
+      "correctness": {
+        // Not in recommended ruleset, turning on manually
+        "noUnusedImports": "warn",
+        // Not in recommended ruleset, turning on manually
+        "useArrayLiterals": "warn",
+        // Not in recommended ruleset, turning on manually
+        "noNewSymbol": "warn",
+        // Rule is buggy, revisit later
+        "useJsxKeyInIterable": "off",
+        // Community feedback on this rule has been poor, we will continue with ESLint
+        "useExhaustiveDependencies": "off",
+        // Turned off due to developer preferences
+        "noUnnecessaryContinue": "off"
+      },
+      "security": {
+        // Covered by Conformance
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "style": {
+        // Not in recommended ruleset, turning on manually
+        "useFragmentSyntax": "warn",
+        // Not in recommended ruleset, turning on manually
+        "noYodaExpression": "warn",
+        // Not in recommended ruleset, turning on manually
+        "useDefaultParameterLast": "warn",
+        // Obscure and arguably not easily readable
+        "useExponentiationOperator": "off",
+        // Stylistic opinion
+        "noUnusedTemplateLiteral": "off",
+        // Stylistic opinion
+        "noUselessElse": "off",
+        // Stylistic opinion
+        "noNonNullAssertion": "off"
+      },
+      "suspicious": {
+        // We trust Vercelians to use any only when necessary
+        "noExplicitAny": "off"
+      },
+      "nursery": {
+        "noStaticElementInteractions": "warn",
+        "noHeadImportInDocument": "warn",
+        "noDocumentImportInPage": "warn",
+        "noDuplicateElseIf": "warn",
+        "noIrregularWhitespace": "warn",
+        "useValidAutocomplete": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "jsxRuntime": "reactClassic",
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "trailingCommas": "none"
+    },
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": false
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": false
+    },
+    "linter": {
+      "enabled": false
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "overrides": [
+    // Playwright requires an object destructure, even if empty
+    // https://github.com/microsoft/playwright/issues/30007
+    {
+      "include": ["playwright/**"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noEmptyPattern": "off"
+          }
+        }
+      }
+    }
+  ]
+}

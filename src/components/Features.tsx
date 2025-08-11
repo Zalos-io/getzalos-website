@@ -2,7 +2,9 @@ import config from '../config/index.json';
 
 const Features = () => {
   const { features } = config;
-  const { title, subtitle, description, items: featuresList } = features;
+  const {
+    title, subtitle, description, items: featuresList,
+  } = features;
 
   return (
     <div className="py-16 bg-white" id="features">

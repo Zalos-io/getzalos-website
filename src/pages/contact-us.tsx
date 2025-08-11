@@ -17,7 +17,7 @@ const ContactUs = () => {
   const [error, setError] = useState('');
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -41,7 +41,9 @@ const ContactUs = () => {
 
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: '', email: '', company: '', message: '' });
+        setFormData({
+          name: '', email: '', company: '', message: '',
+        });
       } else {
         throw new Error('Failed to send message');
       }

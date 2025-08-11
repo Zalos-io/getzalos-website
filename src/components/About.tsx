@@ -1,8 +1,7 @@
 import config from '../config/index.json';
 
 const About = () => {
-  const { company, about } = config;
-  const { logo, name: companyName } = company;
+  const { about } = config;
   const { sections } = about;
 
   return (
@@ -31,19 +30,6 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <div className="flex items-center justify-center mb-8">
-            <img src={logo} alt={companyName} className="w-16 h-16" />
-          </div>
-
-          <div className="border-t border-gray-200 pt-8">
-            <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} {companyName}. All rights
-              reserved.
-            </p>
-          </div>
         </div>
       </div>
     </div>

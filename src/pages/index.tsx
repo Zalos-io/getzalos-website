@@ -1,5 +1,6 @@
 import About from '../components/About';
 import Analytics from '../components/Analytics';
+import CallToAction from '../components/CallToAction';
 import Canvas from '../components/Canvas';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
@@ -11,8 +12,7 @@ import Pricing from '../components/Pricing';
 import Product from '../components/Product';
 import UseCases from '../components/UseCases';
 
-const App = () => {
-  return (
+const App = () => (
     <div className="bg-background overflow-hidden">
       <div className="relative bg-background">
         <div className="max-w-7xl mx-auto">
@@ -54,10 +54,13 @@ const App = () => {
         <About />
       </LazyShow>
 
+      <LazyShow>
+        <CallToAction />
+      </LazyShow>
+
       <Footer />
       <Analytics />
     </div>
-  );
-};
+);
 
 export default App;

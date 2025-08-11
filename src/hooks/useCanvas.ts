@@ -6,6 +6,4 @@ export const CanvasContext = createContext<{
   context: undefined,
 });
 
-export const useCanvasContext = () => {
-  return useContext(CanvasContext);
-};
+export const useCanvasContext = () => useContext(CanvasContext);
